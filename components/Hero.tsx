@@ -1,18 +1,23 @@
-import React from 'react'
+import React from "react";
+import RecipeReviewCard from "./Card";
 
 const Hero = () => {
-    return (
-        <div className='hero'>
+  return (
+    <div className="hero">
+      <div>
+        <h1 className="hero__title">
+          Find, book, or rent a car --quickly and easily!
+        </h1>
 
-            <div >
-                <h1 className='hero__title'>Find, book, or rent a car --quickly and easily!</h1>
+        <p className="hero__subtitle">
+          Streamline your car rental experience with our effortless booking
+          process.
+        </p>
 
-                <p className="hero__subtitle">
-                    Streamline your car rental experience with our effortless booking process.
-                </p>
-            </div>
-        </div>
-    )
-}
+        <RecipeReviewCard />
+      </div>
+    </div>
+  );
+};
 
-export default Hero 
+export default Hero;
